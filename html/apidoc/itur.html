@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>itur package &mdash; ITU-Rpy 0.1.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ITU-Rpy 0.1.6 documentation" href="../index.html"/>
+        <link rel="up" title="API Documentation" href="../api.html"/>
+        <link rel="next" title="models package" href="models.html"/>
+        <link rel="prev" title="API Documentation" href="../api.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ITU-Rpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">itur package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">models package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="itu453.html">Recommendation ITU-R P.453</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu530.html">Recommendation ITU-R P.530</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu618.html">Recommendation ITU-R P.618</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu676.html">Recommendation ITU-R P.676</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu835.html">Recommendation ITU-R P.835</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu837.html">Recommendation ITU-R P.837</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu839.html">Recommendation ITU-R P.839</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1144.html">Recommendation ITU-R P.1144</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1510.html">Recommendation ITU-R P.1510</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1511.html">Recommendation ITU-R P.1511</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">ITU-Rpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../api.html">API Documentation</a> &raquo;</li>
+      
+    <li>itur package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/itur.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="itur-package">
+<h1>itur package<a class="headerlink" href="#itur-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-itur">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-itur" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="itur.atmospheric_attenuation_slant_path">
+<code class="descclassname">itur.</code><code class="descname">atmospheric_attenuation_slant_path</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>f</em>, <em>el</em>, <em>p</em>, <em>D</em>, <em>hs=None</em>, <em>rho=None</em>, <em>R001=None</em>, <em>eta=0.5</em>, <em>T=None</em>, <em>H=None</em>, <em>P=None</em>, <em>hL=1000.0</em>, <em>Ls=None</em>, <em>tau=45</em>, <em>V_t=None</em>, <em>mode='approx'</em>, <em>return_contributions=False</em>, <em>include_rain=True</em>, <em>include_gas=True</em>, <em>include_scintillation=True</em>, <em>include_clouds=True</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.atmospheric_attenuation_slant_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculation of long-term atmospheric attenuation statistics.
+The following procedure provides estimates of the long-term statistics of
+the slant-path atmospheric attenuation at a given location for
+frequencies up to 55 GHz and percentages of time 0.001 % &lt; p &lt; 50 %.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>f</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Frequency (GHz)</li>
+<li><strong>el</strong> (<em>sequence</em><em>, </em><em>number</em><em> or </em><em>Quantity</em>) – Elevation angle (degrees)</li>
+<li><strong>p</strong> (<em>number</em>) – Percetage of the time the rain attenuation value is exceeded.</li>
+<li><strong>D</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Physical diameter of the earth-station antenna (m)</li>
+<li><strong>hs</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Heigh above mean sea level of the earth station (km). If local data for
+the earth station height above mean sea level is not available, an
+estimate is obtained from the maps of topographic altitude
+given in Recommendation ITU-R P.1511.</li>
+<li><strong>rho</strong> (<em>number</em><em> or </em><em>Quantity</em><em>, </em><em>optional</em>) – Water vapor density (g/m3). If not provided, an estimate is obtained
+from Recommendation Recommendation ITU-R P.836.</li>
+<li><strong>R001</strong> (<em>number</em><em>  or </em><em>Quantity</em><em>, </em><em>optional</em>) – <p>Point rainfall rate for the location for 0.01% of an average year         (mm/h). If not provided, an estimate is obtained from Recommendation
+ITU-R P.837. Some useful values:</p>
+<blockquote>
+<div><ul>
+<li>0.25 mm/h : Drizle</li>
+<li>2.5 mm/h : Light rain</li>
+<li>12.5 mm/h : Medium rain</li>
+<li>25.0 mm/h : Heavy rain</li>
+<li>50.0 mm/h : Dwonpour</li>
+<li>100  mm/h : Tropical</li>
+<li>150  mm/h : Monsoon</li>
+</ul>
+</div></blockquote>
+</li>
+<li><strong>eta</strong> (<em>number</em><em>, </em><em>optional</em>) – Antenna efficiency. Default value 0.5 (conservative estimate)</li>
+<li><strong>T</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface ambient temperature (°C) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>H</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface relative humidity (%) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>P</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface pressure (hPa) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>hL</strong> (<em>number</em><em>, </em><em>optional</em>) – Height of the turbulent layer (m). Default value 1000 m</li>
+<li><strong>Ls</strong> (<em>number</em><em>, </em><em>optional</em>) – Slant path length (km). If not provided, it will be computed using the
+rain height and the elevation angle. The ITU model does not require
+this parameter as an input.</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+<li><strong>V_t</strong> (<em>number</em><em> or </em><em>Quantity</em><em>, </em><em>optional</em>) – Integrated water vapour content along the path (kg/m2 or mm).
+If not provided this value is estimated using Recommendation
+ITU-R P.836. Default value None</li>
+<li><strong>mode</strong> (<em>string</em><em>, </em><em>optional</em>) – Mode for the calculation of gaseous attenuation. Valid values are
+‘approx’, ‘exact’. If ‘approx’ Uses the method in Annex 2 of
+Recommendation ITU-R P.676, else uses the method described in
+Section 1. Default, ‘approx’</li>
+<li><strong>return_contributions</strong> (<em>bool</em><em>, </em><em>optional</em>) – Determines whether individual contributions from gases, rain, clouds
+and scintillation are returned in addition ot the total attenuation
+(True), or just the total atmospheric attenuation (False).
+Default is False</li>
+<li><strong>include_rain</strong> (<em>bool</em><em>, </em><em>optional</em>) – Determines whether to include the rain contribution in the total
+atmospheric attenuation calculation or not. Default is True</li>
+<li><strong>include_gas</strong> (<em>bool</em><em>, </em><em>optional</em>) – Determines whether to include the gaseous contribution in the total
+atmospheric attenuation calculation or not. Default is True</li>
+<li><strong>include_scintillation</strong> (<em>bool</em><em>, </em><em>optional</em>) – Determines whether to include the scintillation contribution in the
+total atmospheric attenuation calculation or not. Default is True</li>
+<li><strong>include_clouds</strong> (<em>bool</em><em>, </em><em>optional</em>) – Determines whether to include the clouds contribution in the total
+atmospheric attenuation calculation or not. Default is True</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><strong>A</strong> (<em>Quantity</em>) – Total atmospheric attenuation (dB)</li>
+<li><strong>Ag, Ac, Ar, As, A</strong> (<em>tuple</em>) – Gaseous, Cloud, Rain, Scintillation contributions to total attenuation,
+and total attenuation (dB)</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-itur.utils">
+<span id="utils-module-itur-utils"></span><h2>Utils module (itur.utils)<a class="headerlink" href="#module-itur.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="itur.utils.compute_distance_earth_to_earth">
+<code class="descclassname">itur.utils.</code><code class="descname">compute_distance_earth_to_earth</code><span class="sig-paren">(</span><em>lat_p</em>, <em>lon_p</em>, <em>lat_grid</em>, <em>lon_grid</em>, <em>method=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.compute_distance_earth_to_earth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the distance between a point (P) in (lat_s, lon_s) and a matrix of
+latitude and longitudes (lat_grid, lon_grid).</p>
+<p>If the number of elements in lat_grid is smaller than 100,000, uses the
+WGS84 method, otherwise, uses the harvesine formula.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat_p</strong> (<em>number</em>) – latitude projection of the point P (degrees)</li>
+<li><strong>lon_p</strong> (<em>number</em>) – longitude projection of the point P (degrees)</li>
+<li><strong>lat_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of latitude points to which compute the distance (degrees)</li>
+<li><strong>lon_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of longitude points to which compute the distance (degrees)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>d</strong> – Distance between the point P and each point in (lat_grid, lon_grid)
+(km)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.compute_distance_earth_to_earth_haversine">
+<code class="descclassname">itur.utils.</code><code class="descname">compute_distance_earth_to_earth_haversine</code><span class="sig-paren">(</span><em>lat_p</em>, <em>lon_p</em>, <em>lat_grid</em>, <em>lon_grid</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.compute_distance_earth_to_earth_haversine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the distance between a point (P) in (lat_s, lon_s) and a matrix of
+latitude and longitudes (lat_grid, lon_grid) using the Haversine formula</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat_p</strong> (<em>number</em>) – latitude projection of the point P (degrees)</li>
+<li><strong>lon_p</strong> (<em>number</em>) – longitude projection of the point P (degrees)</li>
+<li><strong>lat_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of latitude points to which compute the distance (degrees)</li>
+<li><strong>lon_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of longitude points to which compute the distance (degrees)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>d</strong> – Distance between the point P and each point in (lat_grid, lon_grid)
+(km)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>References
+This is based on the Haversine formula</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.compute_distance_earth_to_earth_wgs84">
+<code class="descclassname">itur.utils.</code><code class="descname">compute_distance_earth_to_earth_wgs84</code><span class="sig-paren">(</span><em>lat_p</em>, <em>lon_p</em>, <em>lat_grid</em>, <em>lon_grid</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.compute_distance_earth_to_earth_wgs84" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the distance between a point (P) in (lat_s, lon_s) and a matrix of
+latitude and longitudes (lat_grid, lon_grid) using the WGS84 inverse method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat_p</strong> (<em>number</em>) – latitude projection of the point P (degrees)</li>
+<li><strong>lon_p</strong> (<em>number</em>) – longitude projection of the point P (degrees)</li>
+<li><strong>lat_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of latitude points to which compute the distance (degrees)</li>
+<li><strong>lon_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of longitude points to which compute the distance (degrees)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>d</strong> – Distance between the point P and each point in (lat_grid, lon_grid)
+(km)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.elevation_angle">
+<code class="descclassname">itur.utils.</code><code class="descname">elevation_angle</code><span class="sig-paren">(</span><em>h</em>, <em>lat_s</em>, <em>lon_s</em>, <em>lat_grid</em>, <em>lon_grid</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.elevation_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the elevation angle between a satellite located in an orbit
+at height h and located above coordinates (lat_s, lon_s) and a matrix of
+latitude and longitudes (lat_grid, lon_grid)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>h</strong> (<em>float</em>) – Orbital altitude of the satellite (km)</li>
+<li><strong>lat_s</strong> (<em>float</em>) – latitude of the projection of the satellite (degrees)</li>
+<li><strong>lon_s</strong> (<em>float</em>) – longitude of the projection of the satellite (degrees)</li>
+<li><strong>lat_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of latitude points to which compute the elevation angle (degrees)</li>
+<li><strong>lon_grid</strong> (<em>number</em><em>, </em><em>sequence of np.ndarray</em>) – Grid of longitude points to which compute the elevation angle (degrees)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>elevation</strong> – Elevation angle between the satellite and each point in
+(lat_grid, lon_grid) (degrees)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>References
+[1] <a class="reference external" href="http://www.propagation.gatech.edu/ECE6390/notes/ASD5.pdf">http://www.propagation.gatech.edu/ECE6390/notes/ASD5.pdf</a> - Slides 3, 4</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.load_data">
+<code class="descclassname">itur.utils.</code><code class="descname">load_data</code><span class="sig-paren">(</span><em>path</em>, <em>is_text=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data files from /itur/data/</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>string</em>) – Path of the data to load</li>
+<li><strong>is_text</strong> (<em>bool</em>) – Indicates whether the data is numerical or text</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong> – Numpy-array with the data. Numerical data is returned as a float</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.plot_in_map">
+<code class="descclassname">itur.utils.</code><code class="descname">plot_in_map</code><span class="sig-paren">(</span><em>data</em>, <em>lat=None</em>, <em>lon=None</em>, <em>lat_min=None</em>, <em>lat_max=None</em>, <em>lon_min=None</em>, <em>lon_max=None</em>, <em>cbar_text=''</em>, <em>ax=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.plot_in_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the value sin data in a map.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<em>np.ndarray</em>) – Data values to be plotted.</li>
+<li><strong>lat</strong> (<em>np.ndarray</em>) – Matrix with the latitudes for each point in data (deg N)</li>
+<li><strong>lon</strong> (<em>np.ndarray</em>) – Matrix with the longitudes for each point in data (deg E)</li>
+<li><strong>lat_min</strong> (<em>float</em>) – Minimum latitude of the data (deg N)</li>
+<li><strong>lat_max</strong> (<em>float</em>) – Maximum latitude of the data (deg N)</li>
+<li><strong>lon_min</strong> (<em>float</em>) – Minimum longitude of the data (deg E)</li>
+<li><strong>lat_max</strong> – Maximum longitude of the data (deg E)</li>
+<li><strong>cbar_text</strong> (<em>string</em>) – Colorbar text caption.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>m</strong> – The map object generated by Basemap</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Basemap</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.prepare_input_array">
+<code class="descclassname">itur.utils.</code><code class="descname">prepare_input_array</code><span class="sig-paren">(</span><em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.prepare_input_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats an array to be a 2-D numpy-array</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.prepare_output_array">
+<code class="descclassname">itur.utils.</code><code class="descname">prepare_output_array</code><span class="sig-paren">(</span><em>array</em>, <em>type_input=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.prepare_output_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats the output to have the same shape and type as the input</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.prepare_quantity">
+<code class="descclassname">itur.utils.</code><code class="descname">prepare_quantity</code><span class="sig-paren">(</span><em>value</em>, <em>units=None</em>, <em>name_val=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.prepare_quantity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function verifys that a</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.utils.regular_lat_lon_grid">
+<code class="descclassname">itur.utils.</code><code class="descname">regular_lat_lon_grid</code><span class="sig-paren">(</span><em>resolution_lat=1</em>, <em>resolution_lon=1</em>, <em>lon_start_0=False</em>, <em>lat_min=-90</em>, <em>lat_max=90</em>, <em>lon_min=-180</em>, <em>lon_max=180</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.utils.regular_lat_lon_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build latitude and longitude coordinate matrix with resolution
+resolution_lat, resolution_lon</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>resolution_lat</strong> (<em>number</em>) – Resolution for the latitude axis (deg)</li>
+<li><strong>resolution_lon</strong> (<em>number</em>) – Resolution for the longitude axis (deg)</li>
+<li><strong>lon_start_0</strong> (<em>boolean</em>) – Indicates whether the longitude is indexed using a 0 - 360 scale (True)
+or using -180 - 180 scale (False). Default value is False</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><strong>lat</strong> (<em>numpy.ndarray</em>) – Grid of coordinates of the latitude point</li>
+<li><strong>lon</strong> (<em>numpy.ndarray</em>) – Grid of coordinates of the latitude point</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="models.html" class="btn btn-neutral float-right" title="models package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../api.html" class="btn btn-neutral" title="API Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Inigo del Portillo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

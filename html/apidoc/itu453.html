@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recommendation ITU-R P.453 &mdash; ITU-Rpy 0.1.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ITU-Rpy 0.1.6 documentation" href="../index.html"/>
+        <link rel="up" title="models package" href="models.html"/>
+        <link rel="next" title="Recommendation ITU-R P.530" href="itu530.html"/>
+        <link rel="prev" title="models package" href="models.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ITU-Rpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="itur.html">itur package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="models.html">models package</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Recommendation ITU-R P.453</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu530.html">Recommendation ITU-R P.530</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu618.html">Recommendation ITU-R P.618</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu676.html">Recommendation ITU-R P.676</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu835.html">Recommendation ITU-R P.835</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu837.html">Recommendation ITU-R P.837</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu839.html">Recommendation ITU-R P.839</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1144.html">Recommendation ITU-R P.1144</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1510.html">Recommendation ITU-R P.1510</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1511.html">Recommendation ITU-R P.1511</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">ITU-Rpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../api.html">API Documentation</a> &raquo;</li>
+      
+          <li><a href="models.html">models package</a> &raquo;</li>
+      
+    <li>Recommendation ITU-R P.453</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/itu453.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recommendation-itu-r-p-453">
+<h1>Recommendation ITU-R P.453<a class="headerlink" href="#recommendation-itu-r-p-453" title="Permalink to this headline">¶</a></h1>
+<p>Implementation of the methods in Recommendation ITU-R P.453 “The radio refractive index: its formula and refractivity data”</p>
+<dl class="docutils">
+<dt>Available versions:</dt>
+<dd><ul class="first last simple">
+<li>P.453-12 (07/15)</li>
+</ul>
+</dd>
+</dl>
+<p>TODO: Implement version P.453-13</p>
+<p>Recommendation ITU-R P.453 provides methods to estimate the radio refractive
+index and its behaviour for locations worldwide; describes both surface and
+vertical profile characteristics; and provides global maps for the
+distribution of refractivity parameters and their statistical variation.</p>
+<span class="target" id="module-itur.models.itu453"></span><dl class="function">
+<dt id="itur.models.itu453.DN1">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">DN1</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.DN1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the statistics of the vertical gradient of radio
+refractivity over a 1 km layer from the surface.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>p</strong> (<em>number</em>) – Percentage of time exceeded for p% of the average year</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>DN1_p</strong> – Vertical gradient of radio refractivity over a 1 km layer from the
+surface exceeded for p% of the average year</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.DN65">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">DN65</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.DN65" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the statistics of the vertical gradient of radio
+refractivity in the lowest 65 m from the surface of the Earth.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>p</strong> (<em>number</em>) – Percentage of time exceeded for p% of the average year</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>DN65_p</strong> – Vertical gradient of radio refractivity in the lowest 65 m from the
+surface of the Earth exceeded for p% of the average year</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.change_version">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">change_version</code><span class="sig-paren">(</span><em>new_version</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.change_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the version of the ITU-R P.453 recommendation currently being used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>new_version</strong> (<em>int</em>) – <p>Number of the version to use.
+Valid values are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>P.453-12 (02/12) (Current version)</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.dry_term_radio_refractivity">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">dry_term_radio_refractivity</code><span class="sig-paren">(</span><em>Pd</em>, <em>T</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.dry_term_radio_refractivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the dry term of the radio refractivity</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>Pd</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Dry atmospheric pressure (hPa)</li>
+<li><strong>T</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Absolute temperature (K)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>N_dry</strong> – Dry term of the radio refractivity (-)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.get_version">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">get_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the version of the ITU-R P.453 recommendation currently being used.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.map_wet_term_radio_refractivity">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">map_wet_term_radio_refractivity</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>p=50</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.map_wet_term_radio_refractivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the wet term of the radio refractivity</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>N_wet</strong> – Wet term of the radio refractivity (-)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.radio_refractive_index">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">radio_refractive_index</code><span class="sig-paren">(</span><em>P</em>, <em>e</em>, <em>T</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.radio_refractive_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to compute the radio refractive index</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>P</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Total atmospheric pressure (hPa)</li>
+<li><strong>e</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Water vapour pressure  (hPa)</li>
+<li><strong>T</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Absolute temperature (K)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>n</strong> – Radio refractive index (-)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.saturation_vapour_pressure">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">saturation_vapour_pressure</code><span class="sig-paren">(</span><em>T</em>, <em>P</em>, <em>type_hydrometeor='water'</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.saturation_vapour_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the saturation water vapour pressure</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Absolute temperature (C)</li>
+<li><strong>P</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Total atmospheric pressure (hPa)</li>
+<li><strong>type_hydrometeor</strong> (<em>string</em>) – Type of hydrometeor. Valid strings are ‘water’ and ‘ice’</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>e_s</strong> – Saturation water vapour pressure (hPa)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.water_vapour_pressure">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">water_vapour_pressure</code><span class="sig-paren">(</span><em>T</em>, <em>P</em>, <em>H</em>, <em>type_hydrometeor='water'</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.water_vapour_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the water vapour pressure</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Absolute temperature (C)</li>
+<li><strong>P</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Total atmospheric pressure (hPa)</li>
+<li><strong>H</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Relative humidity (%)</li>
+<li><strong>type_hydrometeor</strong> (<em>string</em>) – Type of hydrometeor. Valid strings are ‘water’ and ‘ice’</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>e</strong> – Water vapour pressure (hPa)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu453.wet_term_radio_refractivity">
+<code class="descclassname">itur.models.itu453.</code><code class="descname">wet_term_radio_refractivity</code><span class="sig-paren">(</span><em>e</em>, <em>T</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu453.wet_term_radio_refractivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to determine the wet term of the radio refractivity</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>e</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Water vapour pressure  (hPa)</li>
+<li><strong>T</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Absolute temperature (K)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>N_wet</strong> – Wet term of the radio refractivity (-)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] The radio refractive index: its formula and refractivity data
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.453/en">https://www.itu.int/rec/R-REC-P.453/en</a></p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="itu530.html" class="btn btn-neutral float-right" title="Recommendation ITU-R P.530" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="models.html" class="btn btn-neutral" title="models package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Inigo del Portillo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

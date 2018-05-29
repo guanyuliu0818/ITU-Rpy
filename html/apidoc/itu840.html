@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recommendation ITU-R P.840 &mdash; ITU-Rpy 0.1.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ITU-Rpy 0.1.6 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ITU-Rpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="itur.html">itur package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">models package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="itu453.html">Recommendation ITU-R P.453</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu530.html">Recommendation ITU-R P.530</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu618.html">Recommendation ITU-R P.618</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu676.html">Recommendation ITU-R P.676</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu835.html">Recommendation ITU-R P.835</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu837.html">Recommendation ITU-R P.837</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu839.html">Recommendation ITU-R P.839</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1144.html">Recommendation ITU-R P.1144</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1510.html">Recommendation ITU-R P.1510</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1511.html">Recommendation ITU-R P.1511</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">ITU-Rpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Recommendation ITU-R P.840</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/itu840.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recommendation-itu-r-p-840">
+<h1>Recommendation ITU-R P.840<a class="headerlink" href="#recommendation-itu-r-p-840" title="Permalink to this headline">¶</a></h1>
+<p>Implementation of the methods in Recommendation ITU-R P.840 “Attenuation due to clouds and fog”
+This Recommendation provides methods to predict the attenuation due to clouds and fog on Earth-space paths.</p>
+<dl class="docutils">
+<dt>Available versions include:</dt>
+<dd><ul class="first last simple">
+<li>P.840-4 (10/09) (Superseded)</li>
+<li>P.840-5 (02/12) (Superseded)</li>
+<li>P.840-6 (09/13) (Current version)</li>
+</ul>
+</dd>
+<dt>Non-available versions include:</dt>
+<dd><ul class="first last simple">
+<li>P.840-1 (08/94) (Superseded) - Looks similar to P.840-4</li>
+<li>P.840-2 (08/97) (Superseded) - Looks similar to P.840-4</li>
+<li>P.840-3 (10/99) (Superseded) - Looks similar to P.840-4</li>
+</ul>
+</dd>
+</dl>
+<span class="target" id="module-itur.models.itu840"></span><dl class="function">
+<dt id="itur.models.itu840.change_version">
+<code class="descclassname">itur.models.itu840.</code><code class="descname">change_version</code><span class="sig-paren">(</span><em>new_version</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu840.change_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the version of the ITU-R P.840 recommendation currently being used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>new_version</strong> (<em>int</em>) – Number of the version to use.
+Valid values are:
+* 4: P.840-4 (10/09) (Superseded)
+* 5: P.840-5 (02/12) (Superseded)
+* 6: P.840-6 (09/13) (Current version)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu840.cloud_attenuation">
+<code class="descclassname">itur.models.itu840.</code><code class="descname">cloud_attenuation</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>el</em>, <em>f</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu840.cloud_attenuation" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to estimate the attenuation due to clouds along slant paths for
+a given probability.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>el</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Elevation angle of the receiver points (deg)</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency (GHz)</li>
+<li><strong>p</strong> (<em>number</em>) – Percentage of time exceeded for p% of the average year</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p</strong> – Rainfall rate exceeded for p% of the average year</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Attenuation due to clouds and fog:
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.840/en">https://www.itu.int/rec/R-REC-P.840/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu840.get_version">
+<code class="descclassname">itur.models.itu840.</code><code class="descname">get_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu840.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the version of the ITU-R P.840 recommendation currently being used.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu840.specific_attenuation_coefficients">
+<code class="descclassname">itur.models.itu840.</code><code class="descname">specific_attenuation_coefficients</code><span class="sig-paren">(</span><em>f</em>, <em>T</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu840.specific_attenuation_coefficients" title="Permalink to this definition">¶</a></dt>
+<dd><p>A method to compute the specific attenuation coefficient. The method is
+based on Rayleigh scattering, which uses a double-Debye model for the
+dielectric permittivity of water.</p>
+<p>This model can be used to calculate the value of the specific attenuation
+coefficient for frequencies up to 1000 GHz:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>f</strong> (<em>number</em>) – Frequency (GHz)</li>
+<li><strong>T</strong> (<em>number</em>) – Temperature (degrees C)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>Kl</strong> – Specific attenuation coefficient (dB/km)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">numpy.ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Attenuation due to clouds and fog:
+<a class="reference external" href="https://www.itu.int/rec/R-REC-P.840/en">https://www.itu.int/rec/R-REC-P.840/en</a></p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Inigo del Portillo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

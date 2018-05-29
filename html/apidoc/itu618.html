@@ -1,0 +1,591 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recommendation ITU-R P.618 &mdash; ITU-Rpy 0.1.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ITU-Rpy 0.1.6 documentation" href="../index.html"/>
+        <link rel="up" title="models package" href="models.html"/>
+        <link rel="next" title="Recommendation ITU-R P.676" href="itu676.html"/>
+        <link rel="prev" title="Recommendation ITU-R P.530" href="itu530.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ITU-Rpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="itur.html">itur package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="models.html">models package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="itu453.html">Recommendation ITU-R P.453</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu530.html">Recommendation ITU-R P.530</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Recommendation ITU-R P.618</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu676.html">Recommendation ITU-R P.676</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu835.html">Recommendation ITU-R P.835</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu837.html">Recommendation ITU-R P.837</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu839.html">Recommendation ITU-R P.839</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1144.html">Recommendation ITU-R P.1144</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1510.html">Recommendation ITU-R P.1510</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1511.html">Recommendation ITU-R P.1511</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">ITU-Rpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../api.html">API Documentation</a> &raquo;</li>
+      
+          <li><a href="models.html">models package</a> &raquo;</li>
+      
+    <li>Recommendation ITU-R P.618</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/itu618.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recommendation-itu-r-p-618">
+<h1>Recommendation ITU-R P.618<a class="headerlink" href="#recommendation-itu-r-p-618" title="Permalink to this headline">¶</a></h1>
+<p>Implementation of the methods in Recommendation ITU-R P.618 ” Propagation data and prediction methods required for the design of Earth-space telecommunication systems.”</p>
+<dl class="docutils">
+<dt>Available versions include:</dt>
+<dd><ul class="first last simple">
+<li>P.618-12 (07/15) (Current version)</li>
+</ul>
+</dd>
+<dt>Versions that need to be implemented</dt>
+<dd><ul class="first last simple">
+<li>P.618-11</li>
+<li>P.618-10</li>
+<li>P.618-09</li>
+<li>P.618-08</li>
+<li>P.618-07</li>
+<li>P.618-06</li>
+<li>P.618-05</li>
+<li>P.618-04</li>
+<li>P.618-03</li>
+<li>P.618-02</li>
+<li>P.618-01</li>
+</ul>
+</dd>
+</dl>
+<p>Recommendation ITU-R P.618 provides methods to estimate the propagation
+loss on an Earth-space path, relative to the free-space loss. This value
+is the sum of different contributions as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>attenuation by atmospheric gases;</li>
+<li>attenuation by rain, other precipitation and clouds;</li>
+<li>focusing and defocusing;</li>
+<li>decrease in antenna gain due to wave-front incoherence;</li>
+<li>scintillation and multipath effects;</li>
+<li>attenuation by sand and dust storms.</li>
+</ul>
+</div></blockquote>
+<p>Each of these contributions has its own characteristics as a function of
+frequency, geographic location and elevation angle. As a rule, at elevation
+angles above 10°, only gaseous attenuation, rain and cloud attenuation and
+possibly scintillation will be significant, depending on propagation
+conditions.</p>
+<span class="target" id="module-itur.models.itu618"></span><dl class="function">
+<dt id="itur.models.itu618.change_version">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">change_version</code><span class="sig-paren">(</span><em>new_version</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.change_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.fit_rain_attenuation_to_lognormal">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">fit_rain_attenuation_to_lognormal</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>f</em>, <em>el</em>, <em>hs</em>, <em>P_k</em>, <em>tau</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.fit_rain_attenuation_to_lognormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the log-normal fit of rain attenuation vs. probability of
+occurrence.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>f</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Frequency (GHz)</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>hs</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Heigh above mean sea level of the earth station (km). If local data for
+the earth station height above mean sea level is not available, an
+estimate is obtained from the maps of topographic altitude
+given in Recommendation ITU-R P.1511.</li>
+<li><strong>P_k</strong> (<em>number</em>) – Rain probability</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>sigma_lna</em> – Standar deviation of the lognormal distribution</li>
+<li><em>m_lna</em> – Mean of the lognormal distribution</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.get_version">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">get_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.get_version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.rain_attenuation">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">rain_attenuation</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>f</em>, <em>el</em>, <em>hs=None</em>, <em>p=0.01</em>, <em>R001=None</em>, <em>tau=45</em>, <em>Ls=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.rain_attenuation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculation of long-term rain attenuation statistics from point rainfall
+rate.
+The following procedure provides estimates of the long-term statistics of
+the slant-path rain attenuation at a given location for frequencies up
+to 55 GHz.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency (GHz)</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>hs</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Heigh above mean sea level of the earth station (km). If local data for
+the earth station height above mean sea level is not available, an
+estimate is obtained from the maps of topographic altitude
+given in Recommendation ITU-R P.1511.</li>
+<li><strong>p</strong> (<em>number</em><em>, </em><em>optional</em>) – Percetage of the time the rain attenuation value is exceeded.</li>
+<li><strong>R001</strong> (<em>number</em><em>, </em><em>optional</em>) – <p>Point rainfall rate for the location for 0.01% of an average year
+(mm/h).
+If not provided, an estimate is obtained from Recommendation
+Recommendation ITU-R P.837. Some useful values:</p>
+<blockquote>
+<div><ul>
+<li>0.25 mm/h : Drizle</li>
+<li>2.5 mm/h : Light rain</li>
+<li>12.5 mm/h : Medium rain</li>
+<li>25.0 mm/h : Heavy rain</li>
+<li>50.0 mm/h : Dwonpour</li>
+<li>100  mm/h : Tropical</li>
+<li>150  mm/h : Monsoon</li>
+</ul>
+</div></blockquote>
+</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+<li><strong>Ls</strong> (<em>number</em><em>, </em><em>optional</em>) – Slant path length (km). If not provided, it will be computed using the
+rain height and the elevation angle. The ITU model does not require
+this parameter as an input.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>attenuation</strong> – Attenuation due to rain (dB)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.rain_attenuation_probability">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">rain_attenuation_probability</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>el</em>, <em>hs=None</em>, <em>Ls=None</em>, <em>P0=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.rain_attenuation_probability" title="Permalink to this definition">¶</a></dt>
+<dd><p>The following procedure computes the probability of non-zero rain
+attenuation on a given slant path Pr(Ar &gt; 0).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>hs</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Heigh above mean sea level of the earth station (km). If local data for
+the earth station height above mean sea level is not available, an
+estimate is obtained from the maps of topographic altitude
+given in Recommendation ITU-R P.1511.</li>
+<li><strong>Ls</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Slant path length from the earth station to the rain height (km). If
+data about the rain height is not available, this value is estimated
+automatically using Recommendation ITU-R P.838</li>
+<li><strong>P0</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Probability of rain at the earth station, (0 ≤ P0 ≤ 1)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p</strong> – Probability of rain attenuation on the slant path (%)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.rain_cross_polarization_discrimination">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">rain_cross_polarization_discrimination</code><span class="sig-paren">(</span><em>Ap</em>, <em>f</em>, <em>el</em>, <em>p</em>, <em>tau=45</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.rain_cross_polarization_discrimination" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculation of the cross-polarization discrimination (XPD) statistics from
+rain attenuation statistics. The following procedure provides estimates of
+the long-term statistics of the cross-polarization discrimination (XPD)
+statistics for frequencies up to 55 GHz and elevation angles lower than 60
+deg.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>Ap</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Rain attenuation (dB) exceeded for the required percentage of time, p,
+for the path in question, commonly called co-polar attenuation (CPA)</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency</li>
+<li><strong>el</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Elevation angle (degrees)</li>
+<li><strong>p</strong> (<em>number</em>) – Percetage of the time the XPD is exceeded.</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>attenuation</strong> – Cross-polarization discrimination (dB)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.scintillation_attenuation">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">scintillation_attenuation</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>f</em>, <em>el</em>, <em>p</em>, <em>D</em>, <em>eta=0.5</em>, <em>T=None</em>, <em>H=None</em>, <em>P=None</em>, <em>hL=1000</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.scintillation_attenuation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculation of monthly and long-term statistics of amplitude scintillations
+at elevation angles greater than 5° and frequencies up to 20 GHz.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>f</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Frequency (GHz)</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>p</strong> (<em>number</em>) – Percetage of the time the scintillation attenuation value is exceeded.</li>
+<li><strong>D</strong> (<em>number</em>) – Physical diameter of the earth-station antenna (m)</li>
+<li><strong>eta</strong> (<em>number</em><em>, </em><em>optional</em>) – Antenna efficiency. Default value 0.5 (conservative estimate)</li>
+<li><strong>T</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface ambient temperature (°C) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>H</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface relative humidity (%) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>P</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface pressure (hPa) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>hL</strong> (<em>number</em><em>, </em><em>optional</em>) – Height of the turbulent layer (m). Default value 1000 m</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>attenuation</strong> – Attenuation due to scintillation (dB)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.scintillation_attenuation_sigma">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">scintillation_attenuation_sigma</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>f</em>, <em>el</em>, <em>p</em>, <em>D</em>, <em>eta=0.5</em>, <em>T=None</em>, <em>H=None</em>, <em>P=None</em>, <em>hL=1000</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.scintillation_attenuation_sigma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculation of the standard deviation of the amplitude of the
+scintillations attenuation at elevation angles greater than 5° and
+frequencies up to 20 GHz.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>f</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Frequency (GHz)</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>p</strong> (<em>number</em>) – Percetage of the time the scintillation attenuation value is exceeded.</li>
+<li><strong>D</strong> (<em>number</em>) – Physical diameter of the earth-station antenna (m)</li>
+<li><strong>eta</strong> (<em>number</em><em>, </em><em>optional</em>) – Antenna efficiency. Default value 0.5 (conservative estimate)</li>
+<li><strong>T</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface ambient temperature (°C) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>H</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface relative humidity (%) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>P</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em><em>, </em><em>optional</em>) – Average surface pressure (hPa) at the site. If None, uses the
+ITU-R P.453 to estimate the wet term of the radio refractivity.</li>
+<li><strong>hL</strong> (<em>number</em><em>, </em><em>optional</em>) – Height of the turbulent layer (m). Default value 1000 m</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>attenuation</strong> – Attenuation due to scintillation (dB)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu618.site_diversity_rain_outage_probability">
+<code class="descclassname">itur.models.itu618.</code><code class="descname">site_diversity_rain_outage_probability</code><span class="sig-paren">(</span><em>lat1</em>, <em>lon1</em>, <em>a1</em>, <em>el1</em>, <em>lat2</em>, <em>lon2</em>, <em>a2</em>, <em>el2</em>, <em>f</em>, <em>tau=45</em>, <em>hs1=None</em>, <em>hs2=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu618.site_diversity_rain_outage_probability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the link outage probability in a diversity based scenario (two
+ground stations) due to rain attenuation. This method is valid for
+frequencies below 20 GHz, as at higher frequencies other impairments might
+affect affect site diversity performance.</p>
+<p>This method predicts Pr(A1 &gt; a1, A2 &gt; a2), the joint probability (%) that
+the attenuation on the path to the first site is greater than a1 and the
+attenuation on the path to the second site is greater than a2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat1</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Latitude of the first ground station (deg)</li>
+<li><strong>lon1</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Longitude of the first ground station (deg)</li>
+<li><strong>a1</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Maximum admissible attenuation of the first ground station (dB)</li>
+<li><strong>el1</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Elevation angle to the first ground station (deg)</li>
+<li><strong>lat2</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Latitude of the second ground station (deg)</li>
+<li><strong>lon2</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Longitude of the second ground station (deg)</li>
+<li><strong>a2</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Maximum admissible attenuation of the second ground station (dB)</li>
+<li><strong>el2</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Elevation angle to the second ground station (deg)</li>
+<li><strong>f</strong> (<em>number</em><em> or </em><em>Quantity</em>) – Frequency (GHz)</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+<li><strong>hs1</strong> (<em>number</em><em> or </em><em>Quantity</em><em>, </em><em>optional</em>) – Altitude over the sea level of the first ground station (km). If not
+provided, uses Recommendation ITU-R P.1511 to compute the toporgraphic
+altitude</li>
+<li><strong>hs2</strong> (<em>number</em><em> or </em><em>Quantity</em><em>, </em><em>optional</em>) – Altitude over the sea level of the first ground station (km). If not
+provided, uses Recommendation ITU-R P.1511 to compute the toporgraphic
+altitude</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>probability</strong> – Joint probability (%) that the attenuation on the path to the first
+site is greater than a1 and the attenuation on the path to the second
+site is greater than a2</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+Earth-space telecommunication systems:
+<a class="reference external" href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf">https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.618-12-201507-I!!PDF-E.pdf</a></p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="itu676.html" class="btn btn-neutral float-right" title="Recommendation ITU-R P.676" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="itu530.html" class="btn btn-neutral" title="Recommendation ITU-R P.530" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Inigo del Portillo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recommendation ITU-R P.530 &mdash; ITU-Rpy 0.1.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ITU-Rpy 0.1.6 documentation" href="../index.html"/>
+        <link rel="up" title="models package" href="models.html"/>
+        <link rel="next" title="Recommendation ITU-R P.618" href="itu618.html"/>
+        <link rel="prev" title="Recommendation ITU-R P.453" href="itu453.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ITU-Rpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="itur.html">itur package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="models.html">models package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="itu453.html">Recommendation ITU-R P.453</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Recommendation ITU-R P.530</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu618.html">Recommendation ITU-R P.618</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu676.html">Recommendation ITU-R P.676</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu835.html">Recommendation ITU-R P.835</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu837.html">Recommendation ITU-R P.837</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu839.html">Recommendation ITU-R P.839</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1144.html">Recommendation ITU-R P.1144</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1510.html">Recommendation ITU-R P.1510</a></li>
+<li class="toctree-l3"><a class="reference internal" href="itu1511.html">Recommendation ITU-R P.1511</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">ITU-Rpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../api.html">API Documentation</a> &raquo;</li>
+      
+          <li><a href="models.html">models package</a> &raquo;</li>
+      
+    <li>Recommendation ITU-R P.530</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/itu530.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recommendation-itu-r-p-530">
+<h1>Recommendation ITU-R P.530<a class="headerlink" href="#recommendation-itu-r-p-530" title="Permalink to this headline">¶</a></h1>
+<p>Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems</p>
+<dl class="docutils">
+<dt>Available versions:</dt>
+<dd><ul class="first last simple">
+<li>P.530-16 (07/15) (Current version)</li>
+</ul>
+</dd>
+</dl>
+<p>Not available versions:</p>
+<p>This recommendation includes prediction methods for the propagation effects
+that should be taken into account in the design of digital fixed
+line-of-sight links, both in clear-air and rainfall conditions. It also
+provides link design guidance in clear step-by-step procedures including
+the use of mitigation techniques to minimize propagation impairments. The
+final outage predicted is the base for other Recommendations addressing
+error performance and availability.</p>
+<span class="target" id="module-itur.models.itu530"></span><dl class="function">
+<dt id="itur.models.itu530.XPD_outage_clear_air">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">XPD_outage_clear_air</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>h_e</em>, <em>h_r</em>, <em>d</em>, <em>f</em>, <em>XPD_g</em>, <em>C0_I</em>, <em>XPIF=0</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.XPD_outage_clear_air" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate the probability of outage due to cross-polar discrimnation
+reduction due to clear-air effects, assuming that a targe C0_I is
+required.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>h_e</strong> (<em>number</em>) – Emitter antenna height (above the sea level) [m]</li>
+<li><strong>h_r</strong> (<em>number</em>) – Receiver antenna height (above the sea level) [m]</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances between antennas [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>XPD_g</strong> (<em>number</em>) – Manufacturer’s guaranteed minimum XPD at boresight for both the
+transmitting and receiving antennas [dB]</li>
+<li><strong>C0_I</strong> (<em>number</em>) – Carrier-to-interference ratio for a reference BER [dB]</li>
+<li><strong>XPIF</strong> (<em>number</em><em>, </em><em>optional</em>) – Laboratory-measured cross-polarization improvement factor that gives
+the difference in cross-polar isolation (XPI) at sufficiently large
+carrier-to-noise ratio (typically 35 dB) and at a specific BER for
+systems with and without cross polar interference canceller (XPIC).
+A typical value of XPIF is about 20 dB. Default value 0 dB (no XPIC)
+[dB]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p_XP</strong> – Probability of outage due to clear-air cross-polarization</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.XPD_outage_precipitation">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">XPD_outage_precipitation</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>d</em>, <em>f</em>, <em>el</em>, <em>C0_I</em>, <em>tau=45</em>, <em>U0=15</em>, <em>XPIF=0</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.XPD_outage_precipitation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate the probability of outage due to cross-polar discrimnation
+reduction due to clear-air effects, assuming that a targe C0_I is
+required.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances between antennas [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>C0_I</strong> (<em>number</em>) – Carrier-to-interference ratio for a reference BER [dB]</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+<li><strong>U0</strong> (<em>number</em><em>, </em><em>optional</em>) – Coefficient for the cumulative distribution of the co-polar attenuation
+(CPA) for rain. Default 15 dB.</li>
+<li><strong>XPIF</strong> (<em>number</em><em>, </em><em>optional</em>) – Laboratory-measured cross-polarization improvement factor that gives
+the difference in cross-polar isolation (XPI) at sufficiently large
+carrier-to-noise ratio (typically 35 dB) and at a specific BER for
+systems with and without cross polar interference canceller (XPIC).
+A typical value of XPIF is about 20 dB. Default value 0 dB (no XPIC)
+[dB]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p_XP</strong> – Probability of outage due to clear-air cross-polarization</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.change_version">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">change_version</code><span class="sig-paren">(</span><em>new_version</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.change_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the version of the ITU-R P.530 recommendation currently being used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>new_version</strong> (<em>int</em>) – <p>Number of the version to use.
+Valid values are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>P.530-16 (07/15) (Current version)</li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.diffraction_loss">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">diffraction_loss</code><span class="sig-paren">(</span><em>d1</em>, <em>d2</em>, <em>h</em>, <em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.diffraction_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diffraction loss over average terrain. This value is valid for losses
+greater than 15 dB.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>d1</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances from the first terminal to the path obstruction. [km]</li>
+<li><strong>d2</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances from the second terminal to the path obstruction. [km]</li>
+<li><strong>h</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Height difference between most significant path blockage
+and the path trajectory. h is negative if the top of the obstruction
+of interest is above the virtual line-of-sight. [m]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>A_d</strong> – Diffraction loss over average terrain  [dB]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.fresnel_ellipse_radius">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">fresnel_ellipse_radius</code><span class="sig-paren">(</span><em>d1</em>, <em>d2</em>, <em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.fresnel_ellipse_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the radius of the first Fresnel ellipsoid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>d1</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances from the first terminal to the path obstruction. [km]</li>
+<li><strong>d2</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances from the second terminal to the path obstruction. [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>F1</strong> – Radius of the first Fresnel ellipsoid [m]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.get_version">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">get_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the version of the ITU-R P.530 recommendation currently being used.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.inverse_rain_attenuation">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">inverse_rain_attenuation</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>d</em>, <em>f</em>, <em>el</em>, <em>Ap</em>, <em>tau=45</em>, <em>R001=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.inverse_rain_attenuation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate the percentage of time a given attenuation is exceeded due to
+rain events.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Path length [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>Ap</strong> (<em>number</em>) – Fade depth</li>
+<li><strong>R001</strong> (<em>number</em><em>, </em><em>optional</em>) – <p>Point rainfall rate for the location for 0.01% of an average year
+(mm/h). If not provided, an estimate is obtained from Recommendation
+Recommendation ITU-R P.837. Some useful values:</p>
+<blockquote>
+<div><ul>
+<li>0.25 mm/h : Drizle</li>
+<li>2.5 mm/h : Light rain</li>
+<li>12.5 mm/h : Medium rain</li>
+<li>25.0 mm/h : Heavy rain</li>
+<li>50.0 mm/h : Dwonpour</li>
+<li>100  mm/h : Tropical</li>
+<li>150  mm/h : Monsoon</li>
+</ul>
+</div></blockquote>
+</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p</strong> – Percentage of time that the attenuation A is exceeded.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.multipath_loss">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">multipath_loss</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>h_e</em>, <em>h_r</em>, <em>d</em>, <em>f</em>, <em>A</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.multipath_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for predicting the percentage of time that any fade depth is
+exceeded. This method combines the deep fading distribution given in the
+multipath_loss_for_A’ and an empirical interpolation procedure for shallow
+fading down to 0 dB.</p>
+<p>This method does not make use of the path profile and can be used for
+initial planning, licensing, or design purposes.</p>
+<p>Multipath fading and enhancement only need to be calculated for path
+lengths longer than 5 km, and can be set to zero for shorter paths.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>h_e</strong> (<em>number</em>) – Emitter antenna height (above the sea level) [m]</li>
+<li><strong>h_r</strong> (<em>number</em>) – Receiver antenna height (above the sea level) [m]</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances between antennas [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>A</strong> (<em>number</em>) – Fade depth [dB]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p_w</strong> – percentage of time that fade depth A is exceeded in the average
+worst month  [%]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.multipath_loss_for_A">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">multipath_loss_for_A</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>h_e</em>, <em>h_r</em>, <em>d</em>, <em>f</em>, <em>A</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.multipath_loss_for_A" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for predicting the single-frequency (or narrow-band) fading
+distribution at large fade depths in the average worst month in any part
+of the world. Given a fade depth value ‘A’, determines the amount of time
+it will be exceeded during a year</p>
+<p>This method does not make use of the path profile and can be used for
+initial planning, licensing, or design purposes.</p>
+<p>This method is only valid for small percentages of time.</p>
+<p>Multipath fading and enhancement only need to be calculated for path
+lengths longer than 5 km, and can be set to zero for shorter paths.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>h_e</strong> (<em>number</em>) – Emitter antenna height (above the sea level) [m]</li>
+<li><strong>h_r</strong> (<em>number</em>) – Receiver antenna height (above the sea level) [m]</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Distances between antennas [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>A</strong> (<em>number</em>) – Fade depth [dB]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p_w</strong> – percentage of time that fade depth A is exceeded in the average
+worst month  [%]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.rain_attenuation">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">rain_attenuation</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>d</em>, <em>f</em>, <em>el</em>, <em>p</em>, <em>tau=45</em>, <em>R001=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.rain_attenuation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate long-term statistics of rain attenuation. Attenuation can also
+occur as a result of absorption and scattering by such hydrometeors as
+rain, snow, hail and fog. Although rain attenuation can be ignored at
+frequencies below about 5 GHz, it must be included in design calculations
+at higher frequencies, where its importance increases rapidly.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Path length [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>p</strong> (<em>number</em>) – Percetage of the time the rain attenuation value is exceeded.</li>
+<li><strong>R001</strong> (<em>number</em><em>, </em><em>optional</em>) – <p>Point rainfall rate for the location for 0.01% of an average year
+(mm/h). If not provided, an estimate is obtained from Recommendation
+Recommendation ITU-R P.837. Some useful values:</p>
+<blockquote>
+<div><ul>
+<li>0.25 mm/h : Drizle</li>
+<li>2.5 mm/h : Light rain</li>
+<li>12.5 mm/h : Medium rain</li>
+<li>25.0 mm/h : Heavy rain</li>
+<li>50.0 mm/h : Dwonpour</li>
+<li>100  mm/h : Tropical</li>
+<li>150  mm/h : Monsoon</li>
+</ul>
+</div></blockquote>
+</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>A_r</strong> – Attenuation exceeded during p percent of the time  [dB]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="itur.models.itu530.rain_event_count">
+<code class="descclassname">itur.models.itu530.</code><code class="descname">rain_event_count</code><span class="sig-paren">(</span><em>lat</em>, <em>lon</em>, <em>d</em>, <em>f</em>, <em>el</em>, <em>A</em>, <em>tau=45</em>, <em>R001=None</em><span class="sig-paren">)</span><a class="headerlink" href="#itur.models.itu530.rain_event_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate the number of fade events exceeding attenuation ‘A’
+for 10 seconds or longer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Latitudes of the receiver points</li>
+<li><strong>lon</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Longitudes of the receiver points</li>
+<li><strong>d</strong> (<em>number</em><em>, </em><em>sequence</em><em>, or </em><em>numpy.ndarray</em>) – Path length [km]</li>
+<li><strong>f</strong> (<em>number</em>) – Frequency of the link [GHz]</li>
+<li><strong>el</strong> (<em>sequence</em><em>, or </em><em>number</em>) – Elevation angle (degrees)</li>
+<li><strong>A</strong> (<em>number</em>) – Fade depth</li>
+<li><strong>R001</strong> (<em>number</em><em>, </em><em>optional</em>) – <p>Point rainfall rate for the location for 0.01% of an average year
+(mm/h). If not provided, an estimate is obtained from Recommendation
+Recommendation ITU-R P.837. Some useful values:</p>
+<blockquote>
+<div><ul>
+<li>0.25 mm/h : Drizle</li>
+<li>2.5 mm/h : Light rain</li>
+<li>12.5 mm/h : Medium rain</li>
+<li>25.0 mm/h : Heavy rain</li>
+<li>50.0 mm/h : Dwonpour</li>
+<li>100  mm/h : Tropical</li>
+<li>150  mm/h : Monsoon</li>
+</ul>
+</div></blockquote>
+</li>
+<li><strong>tau</strong> (<em>number</em><em>, </em><em>optional</em>) – Polarization tilt angle relative to the horizontal (degrees)
+(tau = 45 deg for circular polarization). Default value is 45</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>p</strong> – Percentage of time that the attenuation A is exceeded.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<p>[1] Propagation data and prediction methods required for the design of
+terrestrial line-of-sight systems: <a class="reference external" href="https://www.itu.int/rec/R-REC-P.530/en">https://www.itu.int/rec/R-REC-P.530/en</a></p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="itu618.html" class="btn btn-neutral float-right" title="Recommendation ITU-R P.618" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="itu453.html" class="btn btn-neutral" title="Recommendation ITU-R P.453" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Inigo del Portillo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

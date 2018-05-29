@@ -1,0 +1,539 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quick Start &mdash; ITU-Rpy 0.1.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="ITU-Rpy 0.1.6 documentation" href="index.html"/>
+        <link rel="next" title="API Documentation" href="api.html"/>
+        <link rel="prev" title="Installation" href="installation.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ITU-Rpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apidoc/itur.html">itur package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apidoc/models.html">models package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu453.html">Recommendation ITU-R P.453</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu530.html">Recommendation ITU-R P.530</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu618.html">Recommendation ITU-R P.618</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu676.html">Recommendation ITU-R P.676</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu835.html">Recommendation ITU-R P.835</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu837.html">Recommendation ITU-R P.837</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu839.html">Recommendation ITU-R P.839</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu1144.html">Recommendation ITU-R P.1144</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu1510.html">Recommendation ITU-R P.1510</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidoc/itu1511.html">Recommendation ITU-R P.1511</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ITU-Rpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Quick Start</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<p>If you have not installed <em>ITU-Rpy</em> yet take a look at the <a class="reference external" href="installation.html">installation instructions</a> and make sure that all the requirements are fulfilled.
+Examples to illustrate the usage of <em>ITU-Rpy</em> are provided in the examples-folder. In order to understand the models used, check the <a class="reference external" href="apidoc/models.html">models section</a> .</p>
+<p>To get started, we will walk you through a few examples that show the most illustrative case studies for</p>
+<ul class="simple">
+<li>First, we explain the basic usage of <em>ITU-Rpy</em> by computing the attenuation at a single location.</li>
+<li>Second, we explain the usage of <em>ITU-Rpy</em> using vectorized operations.</li>
+<li>Finally, we summarize other useful atmospheric functions in the library. The complete API description can be accessed through the <a class="reference external" href="api.html">API section</a> .</li>
+</ul>
+<div class="section" id="single-location-attenuation">
+<h2>Single location attenuation<a class="headerlink" href="#single-location-attenuation" title="Permalink to this headline">¶</a></h2>
+<p>Here we will compute the link attenuation vs. at a frequency of 22.5 GHz for a link between a satellite in GEO at the orbital slot 77 W and a ground station in Boston.</p>
+<p>In addition, we will show how to compute other parameters of interest such as 0 degree isotherm, rainfall intensity exceeded during 0.01 % of the time, total columnar content liquid water or temperature.</p>
+<p>First, let’s define the coordinates of our ground station and compute the elevation angle of the link</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itur</span>
+<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="kn">as</span> <span class="nn">u</span>
+
+<span class="c1"># Ground station coordinates (Boston)</span>
+<span class="n">lat_GS</span> <span class="o">=</span> <span class="mf">42.3601</span>
+<span class="n">lon_GS</span> <span class="o">=</span> <span class="o">-</span><span class="mf">71.0942</span>
+
+<span class="c1"># Satellite coordinates (GEO, 77 W)</span>
+<span class="n">lat_sat</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">lon_sat</span> <span class="o">=</span> <span class="o">-</span><span class="mi">77</span>
+<span class="n">h_sat</span> <span class="o">=</span> <span class="mi">35786</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">km</span>
+
+<span class="c1"># Compute the elevation angle between satellite and ground station</span>
+<span class="n">el</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">elevation_angle</span><span class="p">(</span><span class="n">h_sat</span><span class="p">,</span> <span class="n">lat_sat</span><span class="p">,</span> <span class="n">lon_sat</span><span class="p">,</span> <span class="n">lat_GS</span><span class="p">,</span> <span class="n">lon_GS</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Next, we define the link parameters</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="mf">22.5</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">GHz</span>    <span class="c1"># Link frequency</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">1.2</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">m</span>       <span class="c1"># Antenna diameters</span>
+</pre></div>
+</div>
+<p>Finally, we compute the total atmospheric attenuation as well as the different contributions for a set of unavailability values and plot the results. Note the flag <cite>return_contributions = True</cite> when calling function <cite>itur.atmospheric_attenuation_slant_path</cite>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">ScalarFormatter</span>
+
+<span class="c1"># Define unavailabilities vector</span>
+<span class="n">unavailabilities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Compute the</span>
+<span class="n">A_g</span><span class="p">,</span> <span class="n">A_c</span><span class="p">,</span> <span class="n">A_r</span><span class="p">,</span> <span class="n">A_s</span><span class="p">,</span> <span class="n">A_t</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">unavailabilities</span><span class="p">:</span>
+        <span class="n">a_g</span><span class="p">,</span> <span class="n">a_c</span><span class="p">,</span> <span class="n">a_r</span><span class="p">,</span> <span class="n">a_s</span><span class="p">,</span> <span class="n">a_t</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">atmospheric_attenuation_slant_path</span><span class="p">(</span><span class="n">lat_GS</span><span class="p">,</span> <span class="n">lon_GS</span><span class="p">,</span>
+                                                                          <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span>
+                                                                          <span class="n">return_contributions</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">A_g</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_g</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">A_c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_c</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">A_r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_r</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">A_s</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_s</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">A_t</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_t</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># Plot the results</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">unavailabilities</span><span class="p">,</span> <span class="n">A_g</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Gaseous attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">unavailabilities</span><span class="p">,</span> <span class="n">A_c</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cloud attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">unavailabilities</span><span class="p">,</span> <span class="n">A_r</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Rain attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">unavailabilities</span><span class="p">,</span> <span class="n">A_s</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Scintillation attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">unavailabilities</span><span class="p">,</span> <span class="n">A_t</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total atmospheric attenuation&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">ScalarFormatter</span><span class="p">())</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Percentage of time attenuation value is exceeded [%]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Attenuation [dB]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>which results in the following plot image:</p>
+<div class="align-center figure" id="id3">
+<a class="reference internal image-reference" href="_images/att_single_location.png"><img alt="attenuation to single ground station" src="_images/att_single_location.png" style="width: 512.0px; height: 382.40000000000003px;" /></a>
+<p class="caption"><span class="caption-text">Atmospheric attenuation at Boston for a link to GEO - 77 W.</span></p>
+</div>
+<p>Note the by default, <em>ITU-Rpy</em> returns Quantity type objects, which are based on <cite>astropy.units</cite> module. Quantity objects are special objects that contain a <cite>value</cite> and <cite>unit</cite> attributes. Conversion among units is possible using the <cite>.to()</cite> method.</p>
+<p>Atmospheric parameters such as temperature, pressure, or water-vapor density can be passed to function <cite>itur.atmospheric_attenuation_slant_path</cite> manually if known, otherwise <em>ITU-Rpy</em> will compute them automatically using the appropriate ITU Recommendation models. Similarly, if the ground station height above mean sea level is known, it can also be introduced manually.</p>
+</div>
+<div class="section" id="vectorial-operations">
+<h2>Vectorial operations<a class="headerlink" href="#vectorial-operations" title="Permalink to this headline">¶</a></h2>
+<p>One of the main characteristics of <em>ITU-Rpy</em> is that it allows for broadcasting of operations when using vectors. This allows for several use cases.</p>
+<div class="section" id="multiple-cities">
+<h3>Multiple cities<a class="headerlink" href="#multiple-cities" title="Permalink to this headline">¶</a></h3>
+<p>First, we might be interested in computing the atmospheric attenuation values exceeded for 0.1 % of the time for a bunch of locations. This can be done as:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itur</span>
+<span class="n">cities</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Boston&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">42.36</span><span class="p">,</span> <span class="o">-</span><span class="mf">71.06</span><span class="p">),</span>
+          <span class="s1">&#39;New York&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">40.71</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.01</span><span class="p">),</span>
+          <span class="s1">&#39;Los Angeles&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">34.05</span><span class="p">,</span> <span class="o">-</span><span class="mf">118.24</span><span class="p">),</span>
+          <span class="s1">&#39;Denver&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">39.74</span><span class="p">,</span> <span class="o">-</span><span class="mf">104.99</span><span class="p">),</span>
+          <span class="s1">&#39;Las Vegas&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">36.20</span><span class="p">,</span> <span class="o">-</span><span class="mf">115.14</span><span class="p">),</span>
+          <span class="s1">&#39;Seattle&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">47.61</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.33</span><span class="p">),</span>
+          <span class="s1">&#39;Washington DC&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">38.91</span><span class="p">,</span> <span class="o">-</span><span class="mf">77.04</span><span class="p">)}</span>
+
+<span class="n">lat</span> <span class="o">=</span> <span class="p">[</span><span class="n">coords</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">coords</span> <span class="ow">in</span> <span class="n">cities</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+<span class="n">lon</span> <span class="o">=</span> <span class="p">[</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">coords</span> <span class="ow">in</span> <span class="n">cities</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+<span class="c1"># Satellite coordinates (GEO, 4 E)</span>
+<span class="n">lat_sat</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">lon_sat</span> <span class="o">=</span> <span class="o">-</span><span class="mi">77</span>
+<span class="n">h_sat</span> <span class="o">=</span> <span class="mi">35786</span> <span class="o">*</span> <span class="n">itur</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="n">km</span>
+
+<span class="c1"># Compute the elevation angle between satellite and ground stations</span>
+<span class="n">el</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">elevation_angle</span><span class="p">(</span><span class="n">h_sat</span><span class="p">,</span> <span class="n">lat_sat</span><span class="p">,</span> <span class="n">lon_sat</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+
+<span class="c1"># Set the link parameters</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mf">22.5</span> <span class="o">*</span> <span class="n">itur</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="n">GHz</span>    <span class="c1"># Link frequency</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">1.2</span> <span class="o">*</span> <span class="n">itur</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="n">m</span>       <span class="c1"># Antenna diameters</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mf">0.1</span>                  <span class="c1"># Unavailability (Values exceeded 0.1% of time)</span>
+
+<span class="c1"># Compute the atmospheric attenuation</span>
+<span class="n">Ag</span><span class="p">,</span> <span class="n">Ac</span><span class="p">,</span> <span class="n">Ar</span><span class="p">,</span> <span class="n">As</span><span class="p">,</span> <span class="n">Att</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">atmospheric_attenuation_slant_path</span><span class="p">(</span>
+        <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">return_contributions</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and we can plot the results</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Plot the results</span>
+<span class="n">city_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cities</span><span class="p">))</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.15</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">city_idx</span><span class="p">,</span> <span class="n">Att</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total atmospheric Attenuation&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">city_idx</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="n">Ar</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Rain attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">city_idx</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="n">Ag</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Gaseous attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">city_idx</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="n">Ac</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Clouds attenuation&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">city_idx</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="n">As</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span>
+           <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Scintillation attenuation&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set the labels</span>
+<span class="n">ticks</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s1">&#39;&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">ticks</span><span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">set_rotation</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Atmospheric attenuation exceeded for 0.1% [dB]&#39;</span><span class="p">)</span>
+
+<span class="c1"># Format image</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper center&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">),</span> <span class="n">ncol</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">rect</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="align-center figure" id="id4">
+<a class="reference internal image-reference" href="_images/att_multiple_cities.png"><img alt="attenuation to single ground station" src="_images/att_multiple_cities.png" style="width: 640.0px; height: 478.0px;" /></a>
+<p class="caption"><span class="caption-text">Atmospheric attenuation exceeded for 0.1 % of the average year in different cities of the US.</span></p>
+</div>
+</div>
+<div class="section" id="attenuation-over-regions-of-the-earth">
+<h3>Attenuation over regions of the Earth<a class="headerlink" href="#attenuation-over-regions-of-the-earth" title="Permalink to this headline">¶</a></h3>
+<p>A second use case for vectorization is computation of the atmospheric attenuation (and other parameters) over large geographical regions. Let’s say that we want to compute the attenuation over Africa of a new Ka-band satellite located in GEO at slot 4 E.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itur</span>
+<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="kn">as</span> <span class="nn">u</span>
+
+<span class="c1"># Generate regular grid of latitude and longitudes with 1 degree resolution</span>
+<span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">regular_lat_lon_grid</span><span class="p">(</span><span class="n">lat_max</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>
+                                           <span class="n">lat_min</span><span class="o">=-</span><span class="mi">60</span><span class="p">,</span>
+                                           <span class="n">lon_max</span><span class="o">=</span><span class="mi">65</span><span class="p">,</span>
+                                           <span class="n">lon_min</span><span class="o">=-</span><span class="mi">35</span><span class="p">)</span>
+
+<span class="c1"># Satellite coordinates (GEO, 4 E)</span>
+<span class="n">lat_sat</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">lon_sat</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">h_sat</span> <span class="o">=</span> <span class="mi">35786</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">km</span>
+
+<span class="c1"># Compute the elevation angle between satellite and ground station</span>
+<span class="n">el</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">elevation_angle</span><span class="p">(</span><span class="n">h_sat</span><span class="p">,</span> <span class="n">lat_sat</span><span class="p">,</span> <span class="n">lon_sat</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="mf">22.5</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">GHz</span>    <span class="c1"># Link frequency</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">1.2</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">m</span>       <span class="c1"># Antenna diameters</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>               <span class="c1"># Unavailability (Values exceeded 1% of time)</span>
+<span class="n">Att</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">atmospheric_attenuation_slant_path</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you have installed Basemap (see <a class="reference external" href="installation.html">installation instructions</a> ), you can use function <cite>itur.utils.plot_in_map()</cite> to display the results as an image:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Plot the results</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">plot_in_map</span><span class="p">(</span><span class="n">Att</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span>
+                           <span class="n">cbar_text</span><span class="o">=</span><span class="s1">&#39;Atmospheric attenuation [dB]&#39;</span><span class="p">,</span>
+                           <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot the satellite location</span>
+<span class="n">m</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">lon_sat</span><span class="p">,</span> <span class="n">lat_sat</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="align-center figure" id="id5">
+<a class="reference internal image-reference" href="_images/att_africa.png"><img alt="attenuation to single ground station" src="_images/att_africa.png" style="width: 851.2px; height: 635.74px;" /></a>
+<p class="caption"><span class="caption-text">Atmospheric attenuation over Africa &#64; 22.5 GHz.</span></p>
+</div>
+</div>
+<div class="section" id="dependency-with-link-parameters">
+<h3>Dependency with link parameters<a class="headerlink" href="#dependency-with-link-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Vectorization works in a lot of different ways. For example, let’s say that we want to compute the dependency of the attenuation with the elevation angle for a the example presented in the <a href="#id8"><span class="problematic" id="id9">`Single location attenuation example &lt;&gt;`_</span></a>. We can just do it using the code below</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itur</span>
+<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="kn">as</span> <span class="nn">u</span>
+
+<span class="n">itur</span><span class="o">.</span><span class="n">deactivate_output_quantity</span><span class="p">()</span>
+
+<span class="c1"># Ground station coordinates (Boston)</span>
+<span class="n">lat_GS</span> <span class="o">=</span> <span class="mf">42.3601</span>
+<span class="n">lon_GS</span> <span class="o">=</span> <span class="o">-</span><span class="mf">71.0942</span>
+
+<span class="c1"># Vectorize the elevation angle</span>
+<span class="n">el</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="mf">22.5</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">GHz</span>    <span class="c1"># Link frequency</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">1.2</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">m</span>       <span class="c1"># Antenna diameters</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>               <span class="c1"># Unavailability (Values exceeded 1% of time)</span>
+<span class="n">Att</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">atmospheric_attenuation_slant_path</span><span class="p">(</span><span class="n">lat_GS</span><span class="p">,</span> <span class="n">lon_GS</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">Att</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Elevation angle [deg]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Attenuation [dB]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="align-center figure" id="id6">
+<a class="reference internal image-reference" href="_images/elevation_angle.png"><img alt="attenuation to single ground station" src="_images/elevation_angle.png" style="width: 448.0px; height: 334.59999999999997px;" /></a>
+<p class="caption"><span class="caption-text">Atmospheric attenuation at Boston vs. elevation angle.</span></p>
+</div>
+<p>Another example of vectorization can be found below in the code to plot the atmospheric attenuation due to gases vs. frequency.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itur</span>
+<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="kn">as</span> <span class="nn">u</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="n">el</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="mf">7.5</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">g</span> <span class="o">/</span> <span class="n">u</span><span class="o">.</span><span class="n">m</span><span class="o">**</span><span class="mi">3</span>
+<span class="n">P</span> <span class="o">=</span> <span class="mi">1013</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">hPa</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">25</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg_C</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">350</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">Att</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">gaseous_attenuation_slant_path</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Att</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency [GHz]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Gaseous Attenuation [dB]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="align-center figure" id="id7">
+<a class="reference internal image-reference" href="_images/att_gases_vs_f.png"><img alt="gaseous attenuation vs. frequency" src="_images/att_gases_vs_f.png" style="width: 576.0px; height: 237.6px;" /></a>
+<p class="caption"><span class="caption-text">Gaseous attenuation vs. frequency.</span></p>
+</div>
+<p>The only parameter that cannot be vectorized is the unavailability - percentage of time that values are exceeded. A <cite>for</cite> loop needs always to be used to compute attenuation values for different unavailabilities (<cite>p</cite>), as was shown in the <a href="#id10"><span class="problematic" id="id11">`Single location attenuation example &lt;&gt;`_</span></a>.</p>
+</div>
+</div>
+<div class="section" id="other-atmospheric-functions">
+<h2>Other atmospheric functions<a class="headerlink" href="#other-atmospheric-functions" title="Permalink to this headline">¶</a></h2>
+<p>We conclude the quickstart with a summary of other functions included in <em>ITU-Rpy</em> that might be useful to compute atmospheric attenuation related parameters. The complete API description can be accessed through the <a class="reference external" href="apidoc/models.html">API section</a> .</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itur</span>
+
+<span class="c1"># Location of the receiver ground stations</span>
+<span class="n">lat</span> <span class="o">=</span> <span class="mf">41.39</span>
+<span class="n">lon</span> <span class="o">=</span> <span class="o">-</span><span class="mf">71.05</span>
+
+<span class="c1"># Link parameters</span>
+<span class="n">el</span> <span class="o">=</span> <span class="mi">60</span>                <span class="c1"># Elevation angle equal to 60 degrees</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mf">22.5</span> <span class="o">*</span> <span class="n">itur</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="n">GHz</span>  <span class="c1"># Frequency equal to 22.5 GHz</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">itur</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="n">m</span>       <span class="c1"># Receiver antenna diameter of 1 m</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mf">0.1</span>                <span class="c1"># We compute values exceeded during 0.1 % of the average</span>
+                                           <span class="c1"># year</span>
+
+<span class="c1"># Compute atmospheric parameters</span>
+<span class="n">hs</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">topographic_altitude</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">surface_mean_temperature</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">pressure</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">hs</span><span class="p">)</span>
+<span class="n">rho_p</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">surface_water_vapour_density</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">hs</span><span class="p">)</span>
+<span class="n">rho_sa</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu835</span><span class="o">.</span><span class="n">water_vapour_density</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">hs</span><span class="p">)</span>
+<span class="n">T_sa</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu835</span><span class="o">.</span><span class="n">temperature</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">hs</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu836</span><span class="o">.</span><span class="n">total_water_vapour_content</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">hs</span><span class="p">)</span>
+
+<span class="c1"># Compute rain and cloud-related parameters</span>
+<span class="n">R_prob</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu618</span><span class="o">.</span><span class="n">rain_attenuation_probability</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">hs</span><span class="p">)</span>
+<span class="n">R_pct_prob</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu837</span><span class="o">.</span><span class="n">rain_percentage_probability</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+<span class="n">R001</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu837</span><span class="o">.</span><span class="n">rainfall_rate</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+<span class="n">h_0</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu839</span><span class="o">.</span><span class="n">isoterm_0</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+<span class="n">h_rain</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu839</span><span class="o">.</span><span class="n">rain_height</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span>
+<span class="n">L_red</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu840</span><span class="o">.</span><span class="n">columnar_content_reduced_liquid</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+<span class="n">A_w</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">itu676</span><span class="o">.</span><span class="n">zenit_water_vapour_attenuation</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">alt</span><span class="o">=</span><span class="n">hs</span><span class="p">)</span>
+
+<span class="c1"># Compute attenuation values</span>
+<span class="n">A_g</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">gaseous_attenuation_slant_path</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">rho_p</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="n">A_r</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">rain_attenuation</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">hs</span><span class="o">=</span><span class="n">hs</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">)</span>
+<span class="n">A_c</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">cloud_attenuation</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+<span class="n">A_s</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">scintillation_attenuation</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+<span class="n">A_t</span> <span class="o">=</span> <span class="n">itur</span><span class="o">.</span><span class="n">atmospheric_attenuation_slant_path</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">el</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Running the code above produces the following results. The ITU Recommendation where the variable or the procedure to compute it is referred appears in square brackets.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>The ITU recommendations predict the following values <span class="k">for</span> the point located
+at coordinates <span class="o">(</span>41.39, -71.05<span class="o">)</span>
+  - Height above the sea level                  <span class="o">[</span>ITU-R P.1511<span class="o">]</span>      22.9 m
+  - Surface mean temperature                    <span class="o">[</span>ITU-R P.1510<span class="o">]</span>      9.4 deg_C
+  - Surface pressure                            <span class="o">[</span>ITU-R P.835<span class="o">]</span>       1005.4 hPa
+  - Standard surface temperature                <span class="o">[</span>ITU-R P.835<span class="o">]</span>       13.6 deg_C
+  - Standard water vapour density               <span class="o">[</span>ITU-R P.835<span class="o">]</span>       8.9 g / m3
+  - Water vapor density <span class="o">(</span><span class="nv">p</span><span class="o">=</span>0.1%<span class="o">)</span>                <span class="o">[</span>ITU-R P.836<span class="o">]</span>       20.3 g / m3
+  - Total water vapour content <span class="o">(</span><span class="nv">p</span><span class="o">=</span>0.1%<span class="o">)</span>         <span class="o">[</span>ITU-R P.836<span class="o">]</span>       54.6 kg / m2
+  - Rain attenuation probability                <span class="o">[</span>ITU-R P.618<span class="o">]</span>       9.6 %
+  - Rain percentage probability                 <span class="o">[</span>ITU-R P.837<span class="o">]</span>       7.8 %
+  - Rainfall rate exceeded <span class="k">for</span> <span class="nv">p</span><span class="o">=</span>0.1%           <span class="o">[</span>ITU-R P.837<span class="o">]</span>       12.9 mm / h
+  - <span class="m">0</span> degree C isotherm height                  <span class="o">[</span>ITU-R P.839<span class="o">]</span>       3.2 km
+  - Rain height                                 <span class="o">[</span>ITU-R P.839<span class="o">]</span>       3.5 km
+  - Columnar content of reduced liquid <span class="o">(</span><span class="nv">p</span><span class="o">=</span>0.1%<span class="o">)</span> <span class="o">[</span>ITU-R P.840<span class="o">]</span>       3.0 kg / m2
+  - Zenit water vapour attenuation <span class="o">(</span><span class="nv">p</span><span class="o">=</span>0.1%<span class="o">)</span>     <span class="o">[</span>ITU-R P.676<span class="o">]</span>       1.5 dB
+
+
+Attenuation values exceeded <span class="k">for</span> <span class="nv">p</span><span class="o">=</span>0.1% of the average year <span class="k">for</span> a link with <span class="nv">el</span><span class="o">=</span><span class="m">60</span> deg, <span class="nv">f</span><span class="o">=</span>22.5 GHz,
+<span class="nv">D</span><span class="o">=</span>1.0 m and receiver ground station located at coordinates <span class="o">(</span>41.39, -71.05<span class="o">)</span>
+  - Rain attenuation                            <span class="o">[</span>ITU-R P.618<span class="o">]</span>       8.2 dB
+  - Gaseous attenuation                         <span class="o">[</span>ITU-R P.676<span class="o">]</span>       1.5 dB
+  - Clouds attenuation                          <span class="o">[</span>ITU-R P.840<span class="o">]</span>       1.6 dB
+  - Scintillation attenuation                   <span class="o">[</span>ITU-R P.618<span class="o">]</span>       0.3 dB
+  - Total atmospheric attenuation               <span class="o">[</span>ITU-R P.618<span class="o">]</span>       10.8 dB
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="API Documentation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Inigo del Portillo.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
