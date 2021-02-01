@@ -47,7 +47,7 @@ If that does not work, you can try to download it using conda:
 
     conda -c conda-forge install basemap
 
-If you are using Windows, you cna also install basemap using the appropriate pre-compiled wheels file from `this webpage <https://www.lfd.uci.edu/~gohlke/pythonlibs/#basemap>`_. 
+If you are using Windows, you can also install basemap using the appropriate pre-compiled wheels file from `this webpage <https://www.lfd.uci.edu/~gohlke/pythonlibs/#basemap>`_. 
 After downloading the .whl file, basemap can be installed running:
 
 
